@@ -54,9 +54,8 @@ public class Client {
 		testList(userService);
 	}
 	
-	public static void testDelete(UserService userService) throws UserNotFound {
-		userService.deleteUser(6);
-		testList(userService);
+	public static void testDelete(UserService userService) {
+		
 	}
 
 
@@ -69,8 +68,8 @@ public class Client {
 		ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
 		UserService userService = (UserService)ac.getBean("userService");
 //		testList(userService);
-//		testUpdate(userService);
+		testUpdate(userService);
 //		testAdd(userService);
-		testDelete(userService);
 	}
+
 }
