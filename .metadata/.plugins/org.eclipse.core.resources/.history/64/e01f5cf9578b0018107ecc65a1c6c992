@@ -1,0 +1,17 @@
+/**
+ * 
+ */
+package com.jike.usermanage.service;
+
+/**
+ * @author liukaibo
+ *
+ */
+public interface UserService {
+	// 添加用户
+	
+	// 修改用户
+	
+	// 根据用户编号删除用户
+	
+}

@@ -1,0 +1,73 @@
+/**
+ * 
+ */
+package com.jike.usermanage.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.jike.usermanage.exception.UserNotFound;
+import com.jike.usermanage.model.User;
+import com.jike.usermanage.repository.UserRepository;
+
+/**
+ * @author liukaibo
+ *
+ */
+public class UserServiceImpl implements UserService {
+	@Autowired
+	private UserRepository userRepository;
+
+	/* (non-Javadoc)
+	 * @see com.jike.usermanage.service.UserService#addUser(com.jike.usermanage.model.User)
+	 */
+	@Override
+	public void addUser(User user) {
+		userRepository.save(user);
+	}
+
+	/* (non-Javadoc)
+	 * @see com.jike.usermanage.service.UserService#updateUser(com.jike.usermanage.model.User)
+	 */
+	@Override
+	public User updateUser(User user) {
+		User userUpdate = userRepository.findOne(user.getId());
+		if (userUpdate == null) {
+			throw UserNotFound();
+		} 
+		
+		if (user.getName() != null) {
+			userUpdate.setName(user.getName());
+		}
+		
+		return null;
+	}
+
+	/* (non-Javadoc)
+	 * @see com.jike.usermanage.service.UserService#deleteUser(int)
+	 */
+	@Override
+	public void deleteUser(int id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	/* (non-Javadoc)
+	 * @see com.jike.usermanage.service.UserService#getUser(int)
+	 */
+	@Override
+	public User getUser(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	/* (non-Javadoc)
+	 * @see com.jike.usermanage.service.UserService#getUsers()
+	 */
+	@Override
+	public List<User> getUsers() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

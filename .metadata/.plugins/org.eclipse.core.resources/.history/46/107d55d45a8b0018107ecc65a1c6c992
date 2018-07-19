@@ -1,0 +1,26 @@
+/**
+ * 
+ */
+package com.jike.usermanage.test;
+
+import com.jike.usermanage.service.UserService;
+
+/**
+ * @author liukaibo
+ *
+ */
+public class Client {
+	
+	public testList(UserService userService) {
+		
+	}
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

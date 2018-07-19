@@ -1,0 +1,59 @@
+/**
+ * 
+ */
+package com.jike.usermanage.test;
+
+import java.util.List;
+
+import org.hibernate.hql.internal.classic.PreprocessingParser;
+
+import com.jike.usermanage.model.User;
+
+import com.jike.usermanage.service.UserService;
+
+
+/**
+ * @author liukaibo
+ *
+ */
+public class Client {
+	
+	public void printUser(User user) {
+		StringBuilder stringBuilder = new StringBuilder();
+		stringBuilder.append("id=" + user.getId());
+		stringBuilder.append("name=" + user.getName());
+		stringBuilder.append("Phone=" + user.getPhone());
+		stringBuilder.append("Address=" + user.getAddress());
+		System.out.println(stringBuilder.toString());
+	}
+	
+	public void testList(UserService userService) {
+		List<User> users = userService.getUsers();
+		for	(int i = 0; i < users.size(); i++) {
+			System.out.print(printUser(users.get(i)));
+		}
+	}
+	
+	public void testUpdate(UserService userService) {
+		
+	}
+	
+	public void testAdd(UserService userService) {
+		
+	}
+	
+	public void testDelete(UserService userService) {
+		
+	}
+
+
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

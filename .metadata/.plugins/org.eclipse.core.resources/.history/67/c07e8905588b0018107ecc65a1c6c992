@@ -1,0 +1,22 @@
+/**
+ * 
+ */
+package com.jike.usermanage.service;
+
+/**
+ * @author liukaibo
+ *
+ */
+public interface UserService {
+	// 添加用户
+	public void addUser();
+	
+	// 修改用户
+	
+	// 根据用户编号删除用户
+	
+	// 查询单个用户
+	
+	// 查询所有用户
+	
+}
