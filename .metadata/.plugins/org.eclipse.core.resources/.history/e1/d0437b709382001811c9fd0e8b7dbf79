@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package com.jike.spring.chapter01;
+
+/**
+ * @author liukaibo
+ *
+ */
+public class Person {
+	private IHelloMessage helloMessage;
+}

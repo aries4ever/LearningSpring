@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+/Users/liukaibo/Desktop/Learn/java/spring/workspace/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+4181009648.index
+2450166520.index
+1137496949.index
+722816435.index
+2191753167.index
+3521191685.index

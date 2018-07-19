@@ -1,0 +1,16 @@
+/**
+ * 
+ */
+package com.jike.usermanage.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.jike.usermanage.model.User;
+
+/**
+ * @author liukaibo
+ *
+ */
+public class UserRepository implements JpaRepository<User, Integer>{
+
+}

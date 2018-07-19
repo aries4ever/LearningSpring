@@ -1,0 +1,5 @@
+package com.jike.spring.chapter01;
+
+public interface IHelloMessage {
+
+}

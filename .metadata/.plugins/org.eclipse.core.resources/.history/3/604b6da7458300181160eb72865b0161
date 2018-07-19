@@ -1,0 +1,14 @@
+/**
+ * 
+ */
+package com.jike.usermanage.service;
+
+import com.jike.usermanage.repository.UserRepository;
+
+/**
+ * @author liukaibo
+ *
+ */
+public class UserServiceImpl implements UserService {
+	private UserRepository userRepository;
+}

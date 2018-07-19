@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package com.jike.usermanage.service;
+
+/**
+ * @author liukaibo
+ *
+ */
+public class UserServiceImpl {
+
+}
